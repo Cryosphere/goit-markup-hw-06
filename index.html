@@ -390,7 +390,7 @@
             <button class="footer-button" type="submit">
               Підписатися
               <svg class="btn-icon" width="24" height="24">
-                <use href="./images/symbol.svg#icon-send"></use>
+                <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
           </div>
@@ -413,32 +413,45 @@
               <span class="label-text">Ім'я</span>
               <input class="input" name="username" type="text" id="username" />
               <svg class="input-icon" width="18" height="18">
-                <use href="./images/symbol.svg#person-input"></use>
+                <use href="./images/icons.svg#person-input"></use>
               </svg>
             </label>
             <label class="label" for="tel-number">
               Телефон
               <svg class="input-icon" width="18" height="18">
-                <use href="./images/symbol.svg#phone-input"></use>
+                <use href="./images/icons.svg#phone-input"></use>
               </svg>
               <input class="input" name="tel-number" type="tel" id="tel-number" />
             </label>
             <label class="label" for="email">
               Пошта
               <svg class="input-icon" width="18" height="18">
-                <use href="./images/symbol.svg#email-input"></use>
+                <use href="./images/icons.svg#email-input"></use>
               </svg>
               <input class="input" name="email" type="email" id="email" />
             </label>
-            <label
-              >Коментар<textarea
+            <label for="user-comments" class="label"
+              >Коментар
+              <textarea
+                class="user-comments"
+                id="user-comments"
                 name="user-comments"
                 rows="5"
-                placeholder="Введіть текст сюди"
+                placeholder="Введіть текст"
               ></textarea>
             </label>
           </div>
         </form>
+        <label class="label-checkbox" for="ckeckbox-input">
+          <input type="checkbox" name="terms-agreement" class="form-checkbox" id="checkbox-input" />
+          <svg class="icon-checkbox" width="16" height="16">
+            <use href="./images/icons.svg#Vector"></use>
+          </svg>
+          <span class="chekbox-content"
+            >Погоджуюся з розсилкою та приймаю
+            <a class="checkbox-link" href=""> Умови договору</a></span
+          >
+        </label>
         <button class="submit button">Відправити</button>
       </div>
     </div>
