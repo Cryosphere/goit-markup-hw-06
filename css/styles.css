@@ -1071,14 +1071,19 @@ font-family: inherit;
 }
 
 .label-checkbox{
+    position: relative;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.icon-checkbox{
+    position: absolute;
+    left: 54px;
+}
+
 .checkbox-content{
-    margin-left: 4px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1087,11 +1092,20 @@ font-family: inherit;
     
         letter-spacing: 0.03em;
     
-        color: var(--text-color);
+        color: #757575;
 }
 
 .form-checkbox{
+    position: absolute;
+    left: 54px;
     appearance: none;
+    width: 16px;
+    height: 15px;
+    margin-right: 7px;
+}
+.form-checkbox:checked .icon-checkbox{
+    
+    opacity: 0;
 }
 
 .checkbox-link{
