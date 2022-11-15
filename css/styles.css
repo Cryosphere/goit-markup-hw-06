@@ -1074,7 +1074,7 @@ font-family: inherit;
     position: relative;
     margin-bottom: 30px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -1084,6 +1084,7 @@ font-family: inherit;
 }
 
 .checkbox-content{
+    margin-left: 78px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
